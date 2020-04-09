@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DouSoftware | Android yazılım üzerine en yenilikçi yapı</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<style>
+body{
+    background:black;
+    font-family: 'Catamaran', sans-serif;
+    
+}
+a{
+    color:white;
+    font-size:24px;
+    transition:.5s;
+    margin:10px;
+    padding:2px 5px;
+}
+a:hover{
+    background-color:orangered;
+    border-radius:5px;
+    color:white;
+    
+    transition:.5s;
+    
+}
+section{
+    width:100%;
+    height:300px;
+}
+label{
+  color:white;
+}
+section.sec2{
+  border:2px solid red;
+  padding:10px;
+  box-sizing:border-box;
+  height:500px;
+
+
+}
+.togcolor{
+  color:white;
+}
+.avatar{
+  
+  height:auto;
+  width: 100%;
+  
+}
+.avatar2{
+  
+  height:auto;
+  width: 80%;
+  
+}
+.avatar3{
+  
+  height:auto;
+  width: 50%;
+  
+}
+.logo{
+  height:auto;
+  width:20%;
+  margin-left:40%;
+  
+}
+h3{
+  color:white;
+}
+h1{
+  color:white;
+}
+p{
+  color:white;
+}
+.nrm{
+  transition:0.5s;
+}
+.btn.nrm:hover{
+  margin-left:100px;
+  transition:0.5s;
+}
+
+
+
+</style>
+<div class="container">
+<div class="col-md-12">
+<img class="logo" src="{{ url_for('static', filename = 'img/dodologo.png') }}">
+</div>
+
+</div>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg  " >
+<div class="container">
+  <a class="navbar-brand" style="color:white;">DOUSOFTWARE</a>
+  <button class="navbar-toggler togcolor"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon togcolor" style="color:white;"></span>
+  </button>
+
+  <div class="collapse navbar-collapse togcolor" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#bizeyazin">Bize Yazın</a>
+      </li>
+      
+      
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/dousoftware/"><i class="fa fa-instagram"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/do%C4%9Fukan-%C3%A7-6b3941163/"><i class="fa fa-linkedin"></i></a>
+      </li>
+      
+      
+    </ul>
+    
+  </div>
+  </div>
+</nav>
+<!--navbar ended-->
+<div class="container" style="margin-bottom:20px;">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 avatar3" src="{{ url_for('static', filename = 'img/c1.jpg') }}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 avatar3" src="{{ url_for('static', filename = 'img/c2.jpg') }}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 avatar3" src="{{ url_for('static', filename = 'img/c3jpg.jpg') }}" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container">
+<div class="row">
+  
+  <div class="col-md-6">
+    <img class="avatar" src="{{ url_for('static', filename = 'img/dodo.png') }}">
+  </div>
+  <div class="col-md-6" style="float:left;padding-top:35px;">
+  <h3>Profesyonel tasarımlara mı ihtiyacınız var ?</h3>
+  <p style="color:white;">İnternet siteleri, şirketlerin vazgeçilmez tanıtım unsurlarının başında gelmektedir. Güncel düşünen, çağımızın teknolojilerini takip eden kurumsal şirketler yazılım teknolojilerinden üst düzeyde faydalanmak hedefiyle belirli bütçelerde yatırım yapmaktalar. Ortaya koydukları sermayeden maksimum dönüş elde etmeyi hedefliyorlar.Biz de sizlere web tasarım hakkındaki fikirlerimizi sunmak ve çözüm ortağınız olmayı hedefliyoruz.</p>
+  </div>
+  <div class="col-md-8" style="float:left;">
+  <h3>SEO'ya mı ihtiyacınız var?</h3>
+  <p style="color:white;">Doğru bir şekilde uygulanan Seo Paketleri sizleri her zaman arama motorların da daha üst sıraya taşımak da ve sizlere özellikle de sosyal medya reklam ağı ile daha çok kişi yönlendirmektedir. Ziyaretçilerinizin sayısının artışı ile birlikte sizler de kazançlarınızı arttırabilir buna göre çalışmalarınızı sergileyebilirsiniz.Unutmayın ki Seo sayesinde internet siteniz daha iyi kitleye sahip olacak ve ziyaretçi sayınızı arttırmış olacak. Firmanızı zirveye taşımak adına uzman ekibimiz ile birlikte yapacağımız çalışmaları sizler de kısa sürede fark edecek ve birçok alanda yapmış olduğunuz çalışmalarınız için bizleri tercih edeceksiniz.</p>
+  </div>
+  <div class="col-md-4">
+    <img class="avatar2" src="{{ url_for('static', filename = 'img/seo.png') }}">
+  </div>
+  <div class="col-md-6">
+    <img class="avatar" src="{{ url_for('static', filename = 'img/javakotlin.png') }}">
+  </div>
+  <div class="col-md-6" style="float:left;box-sizing:border-box;padding-top:55px;">
+  <h3>Android'in geçmişi ve geleceği</h3>
+  <p style="color:white;">Kotlin ve Java programlama dilleri hakkında onlarca yazı yazıldı çizildi ancak 2020 yılında Kotlin mi Java mı sorusunun cevabı pek çok insan tarafından hala merak edilmekte. DouSoftware olarak her iki dilde de size profesyonel destek sağlamaktayız.İki dilde de istediğiniz uygulamalar yetkiliklerimiz sayesinde kolaylıkla tasarlabilmektedir.</p>
+  </div>
+  <div id="hakkimizda" class="jumbotron jumbotron-fluid"  style="border-radius:10px;background-color:orangered;">
+  <div class="container-fluid">
+    <h1 class="display-4">DouSoftware Kimdir?</h1>
+    <hr style="border:1px solid white;">
+    <p class="lead">Yazılım ve bilişim sektörünü yakından tanıyan, sektörün ihtiyaçlarına yönelik çözümler üreten Dou Software sınırsız hayal gücü ile birbirinden yeni projelere imza atmaya devam ediyor.
+</p><p class="lead">Mobil programlama, web tasarım, kurumsal kimlik tasarımı ve daha birçok alanda tecrübeli ekibi ile kullanıcılara profesyonel hizmet sunmayı vadeden Dou Software yazılım alanındaki gelişmeleri sürekli takip ediyor, sektöre pratik ve çözüm odaklı projeler geliştiriyor.</p><p class="lead">
+Projelerinde kullanıcı dostu arayüzler kullanan ve her kesimden kitlenin kullanabileceği yapılar oluşturan geliştirici ekip, özellikle açık kaynak kodlu projelere titizlikle yaklaşıyor. Dünyanın dört bir yanında geliştirilen açık kaynak kodlu projeler hızla sektöre yayılmaya devam ederken Türk kullanıcılara yönelik birbirinden güzel uygulamalar ve tasarımlar da sektördeki yerini almaya devam ediyor.
+</p><p class="lead">Dou Software’de milliyetçi duygular ve Ulu Önder Gazi Mustafa Kemal Atatürk ilkeleri doğrultusunda önce Türkiye önce Türkçe diyerek ülkemizdeki kullanıcılara yönelik birbirinden yeni projeler sunuyor.
+Bünyesinde grafik tasarımcılar, bilgisayar mühendisleri ve bilgisayar programcılarına yer veren genç ekip ‘sevdiğin işi yap’ sloganı ile sektördeki yerini koruyor.</p>
+  </div>
+</div>
+<div id="bizeyazin"class="col-md-6">
+<h3>Bize yazın<h3>
+<hr style="border:1px solid white;">
+<p style="font-size:22px;">Şirketiniz veya bireysel çalışmalarınızda ,projelerinizde çözüm ortağınız olmayı hedefliyoruz.Çözüm ortaklığı için sizden haber bekliyoruz</p>
+<a href = "mailto: dousoftware@gmail.com"><i class="fa fa-paper-plane " style="color:white;"></i>  dousoftware@gmail.com</a>
+</div>
+<div class="col-md-6"style="padding-top:60px;">
+{% from "includes/formhelper.html" import render_field %}
+<form  method=post>
+  <dl>
+    
+    {{ render_field(form.email,class="form-control") }}
+    {{ render_field(form.detay,class="form-control") }}
+    
+  </dl>
+  <button type="submit" class="btn nrm" style="color:white;margin-left:100px;"data-toggle="modal" data-target="#exampleModal"><i class="fa fa-paper-plane fa-3x" style="color:white;"></i></button>
+</form>
+</div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bildirim Mesajı</h5>
+        
+      </div>
+      <div class="modal-body">
+        Mesajınız DouSowftware Ekibi'ne İletilmiştir
+      </div>
+      
+    </div>
+  </div>
+</div>
+  </div>
+  
+</div>
+
+<!--Sec2 end,sec 3 begin-->
+    
+<!-- FOOTER -->
+<div class="container">
+  <footer class="blog-footer" style="background-color:orangered;">
+  <div class="container" style="padding:50px;">
+  <p class="float-right"><a href="#"><i class="fa fa-arrow-up" style="color:white;float:left;"></i></a></p>
+  <p style="font-size:24px;">2020 - Tüm hakları DouSoftware ve <a href="https://www.cybercatsoftware.com">CyberCatSoftware</a>'a aittir.</p>
+  
+  
+  
+  </div>
+</footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
